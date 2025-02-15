@@ -15,7 +15,7 @@ documents = SimpleDirectoryReader("data/").load_data()
 print(len(documents))
 
 device  = "cuda" if torch.cuda.is_available() else "cpu"
-d = 1024
+d = 1024 #no of dimension of embedding vector
 faiss_index = faiss.IndexFlatL2(d)
 
 #load the embedding model - model will be saved in the cache directory
