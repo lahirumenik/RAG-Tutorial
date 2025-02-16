@@ -1,3 +1,8 @@
+"""
+Created by Lahiru Menikdiwela
+Date: 16 February 2025
+"""
+
 import gradio as gr
 from rag import generate_query
 
