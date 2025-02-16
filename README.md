@@ -27,7 +27,10 @@ For example:
 
 This is useful in RAG because when you ask a question, the AI finds the most relevant text from a large document using embeddings before generating a response.
 
-Imagine you have a **1000-page PDF** and you ask, an question Instead of reading all 1000 pages, the using embeddings, it is possible finds the sections that are related to your question and gives you an answer from it.
+Since texts are represented using vectors which contains number, it is possible to use mathematical operations using vectors (Cosine Similarity) to identifies contets that is similar to each others.
+
+Imagine you have a **1000-page PDF** and you ask an question, Instead of reading all 1000 pages, using embeddings, it is possible finds the sections that are related to your question and gives you an answer from it.
+
 
 ## What is a Vector Store?
 
@@ -111,19 +114,16 @@ python app.py
 
 ### 7. Experiment with RAG
 
-The main logic is in **rag.py**, which contains comments explaining the retrieval and generation process.
+The main logic for Retrieval-Augmented Generation (RAG) is implemented in **rag.py**. This file contains detailed comments explaining the retrieval and generation process.  
+
+To deepen your understanding, study the **rag.py** file and experiment with it by:  
  
+- Using your own documents by adding them to the `data` folder.  
+- Running `vectorstore.py` to process the documents and update the FAISS vector store.
+- Changing different parameters in `rag.py` to observe how they affect retrieval and generation. 
 
-## Future Improvements
-
-This is a simple RAG system. For better results, consider:
-
-1. **Better embeddings** for improved retrieval.
-2. **Using metadata** in search.
-3. **Finetuning the LLM** for improved answers.
-4. **Adjusting retrieval parameters** to get more relevant documents.
-5. **Using cross-encoder reranking** for better selection.
-
+After modifying parameters and adding new documents, execute the RAG pipeline to analyze its performance and see how retrieval affects the final generated response.  
+ 
 This tutorial is designed to help you **understand RAG basics** and experiment with it on your own machine. Happy learning! 🚀
 
 
