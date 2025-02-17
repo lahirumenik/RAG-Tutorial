@@ -103,7 +103,6 @@ pip install -r requirements.txt
 python download.py
 ```
 
-*Note: This will download about **1GB** of data.*
 
 ### 6. Run the Application
 
