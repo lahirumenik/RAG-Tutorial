@@ -8,12 +8,16 @@
 
 ✅ Uses **local models**, so no API keys are needed.  
 ✅ Can run on **CPU**, so no GPU is required.  
-✅ Designed for **learning purposes** with simple implementation.  
-✅ Covers **basic retrieval and generation** steps. 
 
 ## Introduction
 
-This tutorial explains Retrieval-Augmented Generation (RAG) in an easy way. RAG helps AI find the right information before answering a question. Instead of guessing, the AI first searches through documents, picks the useful parts, and then gives a better answer. This makes the response more accurate and helpful.
+Retrieval-Augmented Generation (RAG) is a smart way to find the right information before answering a question. Instead of just making up an answer, it first looks through a set of documents, picks out the most useful parts, and then creates a response based on that information. This makes the answer more accurate and reliable.
+
+RAG can be used in many real-life situations. One example is a study assistant for students. Instead of searching through textbooks, notes, or online materials manually, students can ask a question, and the system will find the best answer by looking through study materials. This makes learning faster and easier.
+
+## Prerequisites
+
+No prior knowledge of Natural Language Processing (NLP) is needed to follow this tutorial. A basic understanding of Python is sufficient to get started.
 
 ### What are Embeddings?
 
