@@ -30,7 +30,7 @@ index = load_index_from_storage(storage_context=storage_context, embed_model=emb
 
 #Load the LLM model and tokenizer
 tokenizer = AutoTokenizer.from_pretrained("./model")
-model = AutoModelForCausalLM.from_pretrained("./model", device_map="auto", torch_dtype=torch.bfloat16,)
+model = AutoModelForCausalLM.from_pretrained("./model", torch_dtype=torch.bfloat16,)
 
 
 #Retrieve 5 documents (pages) similar to the query 
