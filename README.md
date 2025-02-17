@@ -1,8 +1,6 @@
-# Chat With Your Own Documents
+# RAG: Retrieval-Augmented Generation for Beginners
+
 ![image](https://github.com/user-attachments/assets/abccc18e-75c2-4acd-a1bd-46650aa2ea7e)
-
-# RAG-Tutorial: Retrieval-Augmented Generation for Beginners
-
 
 ## Key Features of This Tutorial
 
@@ -36,7 +34,7 @@ Since texts are represented using vectors which contains number, it is possible 
 Imagine you have a **1000-page PDF** and you ask an question, Instead of reading all 1000 pages, using embeddings, it is possible finds the sections that are related to your question and gives you an answer from it.
 
 
-## What is a Vector Store?
+### What is a Vector Store?
 
 A vector store is a specialized database designed to store and retrieve high-dimensional vectors efficiently. These vectors, also known as embeddings, are numerical representations of data (such as text, images, or audio) that capture semantic relationships. Unlike traditional databases that store raw text or structured data, vector stores allow for similarity searches, meaning they can quickly find items that are semantically related rather than just exact matches.For this tutorial we will use FAISS as the vector store. 
 
@@ -52,7 +50,7 @@ You can also add your own document(s) to the `data` directory and run `vectorsto
 Note that there is an embedding model to convert text in to embeddings. you can observe that in `vectorstore.py` file
 
 
-### How RAG Works
+## How RAG Works
 
 When you ask a question:
 
@@ -115,6 +113,8 @@ python app.py
 
 - After running this, it will show a **Gradio link** (e.g., `http://127.0.0.1:7860`)
 - Open the link in your browser to interact with the RAG system.
+
+Current vector store is created by a document 'Economic Review of Sri Lanka for 2023'. There you can try questions like 'How VAT related to inflation in 2024?', 'In which period daily power cut has started in Sri Lnaka and waht is the reason for it?' and further you can create a question by studying the cuurent document in data directory. After that try to create your own vector store as described above.
 
 ### 7. Experiment with RAG
 
